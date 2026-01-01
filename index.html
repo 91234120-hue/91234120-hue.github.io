@@ -1,19 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-TW">
 <head>
 <meta charset="UTF-8">
 <title>我的餐飲美食網站</title>
 <style>
     body {
-        background: linear-gradient(#ffe6b3, #ffffff);
+        background: linear-gradient(#ffe6b3, #ffffff); /* 漸層背景 */
         font-family: "Microsoft JhengHei", Arial, sans-serif;
-        margin: 0;
-        padding: 0;
+        margin: 0; padding: 0;
     }
-    /* 導覽列樣式 */
     nav {
         background-color: #333;
-        padding: 10px 0;
+        padding: 15px;
         text-align: center;
     }
     nav a {
@@ -22,33 +20,35 @@
         padding: 10px 20px;
         margin: 0 5px;
     }
-    nav a:hover {
-        background-color: #555;
-        border-radius: 5px;
-    }
+    nav a:hover { background-color: #555; border-radius: 5px; }
     .box {
-        width: 80%;
-        margin: 20px auto;
+        width: 70%;
+        margin: 30px auto;
         background: white;
         padding: 30px;
         border-radius: 15px;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        box-shadow: 0 0 15px gray; /* 陰影效果 */
     }
-    h1 { color: #5d4037; border-bottom: 2px solid #ffe6b3; padding-bottom: 10px; }
-    ul { list-style: none; padding: 0; }
-    li { margin: 20px 0; padding: 15px; border-bottom: 1px dashed #ccc; display: flex; align-items: center; }
-    img { width: 150px; border-radius: 10px; margin-right: 20px; }
-    .content-text { flex: 1; }
+    .item {
+        border-bottom: 1px solid #eee;
+        padding: 20px 0;
+        display: flex;
+        align-items: center;
+    }
+    img {
+        width: 250px; /* 圖片寬度 */
+        border-radius: 10px;
+        margin-right: 20px;
+    }
     .btn {
         display: inline-block;
+        margin-top: 10px;
         padding: 8px 15px;
         background: #ffb74d;
         color: white;
         text-decoration: none;
         border-radius: 5px;
-        margin-top: 10px;
     }
-    .btn:hover { background: #ffa726; }
 </style>
 </head>
 <body>
@@ -65,39 +65,39 @@
     <h1>🍽 我的餐飲美食小天地</h1>
     <p>歡迎來到我的個人網站，這裡分享我最愛的餐飲與學習心得。</p>
 
-    <ul>
-        <li>
-            <img src="https://i.imgur.com/7fFh4dD.jpeg">
-            <div class="content-text">
-                <h3>🍔 餐飲介紹一：起司牛肉堡</h3>
-                <p>多汁牛肉搭配濃郁起司，是考前最棒的安慰食物。</p>
-                <a href="food1.html" class="btn">👉 進入詳細介紹</a>
-            </div>
-        </li>
-        <li>
-            <img src="https://i.imgur.com/4JxgEoW.jpeg">
-            <div class="content-text">
-                <h3>🍜 餐飲介紹二：日式拉麵</h3>
-                <p>濃厚湯頭與彈牙麵條，寒流來時一碗剛剛好。</p>
-                <a href="food2.html" class="btn">👉 進入詳細介紹</a>
-            </div>
-        </li>
-        <li>
-            <img src="https://i.imgur.com/tY6WmwX.jpeg">
-            <div class="content-text">
-                <h3>🍰 餐飲介紹三：草莓蛋糕</h3>
-                <p>甜點即是正義，壓力大的時候吃一口直接復活。</p>
-                <a href="food3.html" class="btn">👉 進入詳細介紹</a>
-            </div>
-        </li>
-    </ul>
+    <div class="item">
+        <img src="https://i.imgur.com/7fFh4dD.jpeg" alt="起司牛肉堡">
+        <div>
+            <h2>🍔 起司牛肉堡</h2>
+            <p>多汁牛肉搭配濃郁起司，是考前最棒的安慰食物。</p>
+            <a href="food1.html" class="btn">👉 進入詳細介紹</a>
+        </div>
+    </div>
 
-    <hr>
-    <h2>📝 學習心得</h2>
-    <p>關於這次網頁設計課程，我的一些心得分享。</p>
-    <a href="reflection.html" class="btn" style="background:#64b5f6;">👉 點我看心得</a>
+    <div class="item">
+        <img src="https://i.imgur.com/4JxgEoW.jpeg" alt="日式拉麵">
+        <div>
+            <h2>🍜 日式拉麵</h2>
+            <p>濃厚湯頭與彈牙麵條，寒流來時一碗剛剛好。</p>
+            <a href="food2.html" class="btn">👉 進入詳細介紹</a>
+        </div>
+    </div>
+
+    <div class="item">
+        <img src="https://i.imgur.com/tY6WmwX.jpeg" alt="草莓蛋糕">
+        <div>
+            <h2>🍰 草莓蛋糕</h2>
+            <p>甜點即是正義，壓力大的時候吃一口直接復活。</p>
+            <a href="food3.html" class="btn">👉 進入詳細介紹</a>
+        </div>
+    </div>
+
+    <div style="padding-top: 20px;">
+        <h2>📝 學習心得</h2>
+        <p>關於這次網頁設計課程，我的一些心得分享。</p>
+        <a href="reflection.html" class="btn" style="background:#64b5f6;">👉 點我看心得</a>
+    </div>
 </div>
 
 </body>
 </html>
-
